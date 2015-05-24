@@ -41,6 +41,44 @@ class ViewController: UIViewController {
 
         println("欢迎消息是：\(greeting)")  // 很神奇的一个东西哈。
 
+        let welcomeMessage = "Hello world."
+        NSLog("欢迎光临: %@.", "xiaoqigui")  // 好神奇的一个东西，怎么都觉得不是很对的感觉。
+
+        var red: Double, green, blue: Double
+
+        /*var anInt:Int = 10
+        var aChar:Character = "a"
+        var anotherChar:Character = anInt + aChar
+        var anotherInt:Int = anotherChar*/
+
+        /*let cannotBeNegative: UInt8 = -1
+        let overFlow: Int8 = Int8.max + 1*/
+
+        let twoThousand: UInt16 = 2_000
+        let one: UInt8 = 1
+        let twoThousandAndOne = twoThousand + UInt16(one)
+        println(twoThousandAndOne)
+
+        let three = 3  //Int
+        let pointOneFourOneFiveNine = 0.14159  //Double
+        let pi_2 = Double(three) + pointOneFourOneFiveNine
+        println(pi_2)
+
+        let isPasswordCorrect: Bool = false
+        let areYouAreAChinese = true
+
+        if isPasswordCorrect {
+            println("welcome!")
+        } else {
+            println("sorry!")
+        }
+
+        let value_bool = 1
+        if value_bool == 1 {
+            println("value_bool is 1")
+        }
+
+
     }
 
 
