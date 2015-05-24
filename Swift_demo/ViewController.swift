@@ -38,12 +38,14 @@ class ViewController: UIViewController {
 
         let minValue = UInt8.min; println(minValue)
         let maxValue = UInt8.max; println(maxValue)
+
+        println("欢迎消息是：\(greeting)")  // 很神奇的一个东西哈。
+
     }
 
 
     override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarni
-        ng()
+        super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
