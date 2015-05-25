@@ -94,8 +94,22 @@ class ViewController: UIViewController {
         let stringValue = "Hello, World!"
         println("stringValue 含有 \(count(stringValue)) 个字符。")
 
+        let multiplier = 3
+        let message = "\(multiplier) 的2.5倍是:\(Double(multiplier) * 2.5)"
+        println(message)
 
+        let student_score = ["baelish": 100, "tyrion": 60]
+//        println("score is \(student_score["baelish"])")
+        var score = student_score["baelish"]
+        println("score is \(score)")
 
+        let quotation = "I like programming"
+        let sameQuotation = "I like programming"
+        if quotation == sameQuotation{
+            println("same")
+        } else {
+            println("not same")
+        }
     }
 
 
