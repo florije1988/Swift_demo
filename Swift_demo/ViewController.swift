@@ -110,6 +110,7 @@ class ViewController: UIViewController {
         } else {
             println("not same")
         }
+
     }
 
 
