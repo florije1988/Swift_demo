@@ -78,6 +78,19 @@ class ViewController: UIViewController {
             println("value_bool is 1")
         }
 
+        var emptyString = ""
+        var anotherEmptyString = String()
+        if emptyString == anotherEmptyString && isEmpty(emptyString) {
+            println("empty")
+        }
+
+        emptyString += "not empty"
+        println(emptyString)
+
+        let exclamationMark: Character = "!"
+        emptyString.append(exclamationMark)
+        println(emptyString)
+
 
     }
 
