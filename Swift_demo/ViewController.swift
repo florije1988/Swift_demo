@@ -91,6 +91,10 @@ class ViewController: UIViewController {
         emptyString.append(exclamationMark)
         println(emptyString)
 
+        let stringValue = "Hello, World!"
+        println("stringValue 含有 \(count(stringValue)) 个字符。")
+
+
 
     }
 
