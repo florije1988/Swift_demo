@@ -110,6 +110,12 @@ class ViewController: UIViewController {
         } else {
             println("not same")
         }
+        let eAcuteQuestion = "caf\u{E9}"
+        let combinedEAcuteQuestion = "caf\u{65}\u{301}"
+        if eAcuteQuestion == combinedEAcuteQuestion {
+            println("same")
+        }
+
 
     }
 
