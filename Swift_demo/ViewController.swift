@@ -116,7 +116,11 @@ class ViewController: UIViewController {
             println("same")
         }
 
+        let possibleNumber = "123"
+        let convertedNumber = possibleNumber.toInt()
 
+        let optionalInt: Int? = 886
+        var optionalString: String? = "Hello world!"
     }
 
 
