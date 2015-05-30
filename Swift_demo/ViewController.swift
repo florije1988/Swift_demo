@@ -105,7 +105,7 @@ class ViewController: UIViewController {
 
         let quotation = "I like programming"
         let sameQuotation = "I like programming"
-        if quotation == sameQuotation{
+        if quotation == sameQuotation {
             println("same")
         } else {
             println("not same")
@@ -116,11 +116,38 @@ class ViewController: UIViewController {
             println("same")
         }
 
+        let http404Error = (404, "Not Found")
+        let (statusCode, statusMessage) = http404Error
+        println("statusCode is : \(statusCode)")
+        println("statusMessage is : \(statusMessage)")
+
+        println("statusCode is : \(http404Error.0)")
+        println("statusMessage is : \(http404Error.1)")
+
+        let http200Status = (statusCode: 200, description: "OK")
+        println("statusCode is : \(http200Status.statusCode)")
+
         let possibleNumber = "123"
         let convertedNumber = possibleNumber.toInt()
 
-        let optionalInt: Int? = 886
-        var optionalString: String? = "Hello world!"
+        let letoptionalInt: Int? = 866
+        var varoptionalString: String? = "Hello, world"
+
+        if (convertedNumber != nil) {
+            println("\(possibleNumber)含有Int型值：\(convertedNumber!)")
+
+        } else {
+            println("\(possibleNumber)不能转换为Int型.")
+
+        }
+
+        if let actualNumber = possibleNumber.toInt(){
+            println("\(possibleNumber)含有Int型值：\(actualNumber)")
+        } else {
+            println("\(possibleNumber)不能转换为Int型.")
+        }
+
+
     }
 
 
