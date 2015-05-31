@@ -147,7 +147,20 @@ class ViewController: UIViewController {
             println("\(possibleNumber)不能转换为Int型.")
         }
 
+        let possibleString: String? = "one optional string"
+        println(possibleString!)
 
+        let assumedString: String! = "implicitly unwrapped optional"
+        println(assumedString)
+
+        let age = -1
+//        assert(age >= 0, "age left 0!")
+
+        var shoppingList: Array<String> = ["Eggs", "Milk"]
+        var demoList = ["Eggs", 123, 12.5, true]
+        for item in demoList{
+            println("demoList item is: \(item)")
+        }
     }
 
 
