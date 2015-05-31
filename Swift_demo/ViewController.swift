@@ -161,6 +161,23 @@ class ViewController: UIViewController {
         for item in demoList{
             println("demoList item is: \(item)")
         }
+
+        println("shoppingList has count: \(shoppingList.count)")
+
+        println("shoppingList is empty: \(shoppingList.isEmpty)")
+
+        shoppingList.append("Flour")
+        shoppingList += ["Powder"]
+
+        shoppingList += ["xiaofu", "xiaozhang"]
+        println("shoppingList has count: \(shoppingList.count)")
+
+        var firstItem = shoppingList[0]
+        println("first of shoppingList is \(firstItem)")
+
+        shoppingList[0] = "Six eggs"
+
+        shoppingList[3...5] = ["Bananas", "Apples"]
     }
 
 
