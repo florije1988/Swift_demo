@@ -189,6 +189,29 @@ class ViewController: UIViewController {
         for (index, value) in enumerate(shoppingList) {
             println("Item \(value), index \(index)")
         }
+
+        for (var (index, value)) in enumerate(shoppingList) {
+            println("Item \(value), index \(index)")
+        }
+
+        var someInts = [Int]()
+        println("someInts has count: \(someInts.count)")
+
+        someInts.append(3)
+        someInts = []
+
+        var threeDoubles = [Double](count: 3, repeatedValue: 0.0)
+        var anotherThreeDoubles = Array(count: 3, repeatedValue: 2.5)
+        var sixDoubles = threeDoubles + anotherThreeDoubles
+
+        var games: [String: String] = ["name": "fuboqing", "course": "shuxue"]
+        var game2 = ["name": "fuboqing", "course": "shuxue"]
+        println(games)
+
+        println("game count: \(games.count)")
+        println("game is empty: \(games.isEmpty)")
+        games["time"] = "2014:11:29"
+
     }
 
 
