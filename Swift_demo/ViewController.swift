@@ -141,7 +141,7 @@ class ViewController: UIViewController {
 
         }
 
-        if let actualNumber = possibleNumber.toInt(){
+        if let actualNumber = possibleNumber.toInt() {
             println("\(possibleNumber)含有Int型值：\(actualNumber)")
         } else {
             println("\(possibleNumber)不能转换为Int型.")
@@ -158,7 +158,7 @@ class ViewController: UIViewController {
 
         var shoppingList: Array<String> = ["Eggs", "Milk"]
         var demoList = ["Eggs", 123, 12.5, true]
-        for item in demoList{
+        for item in demoList {
             println("demoList item is: \(item)")
         }
 
@@ -177,7 +177,18 @@ class ViewController: UIViewController {
 
         shoppingList[0] = "Six eggs"
 
-        shoppingList[3...5] = ["Bananas", "Apples"]
+        shoppingList[3 ... 5] = ["Bananas", "Apples"]
+
+        shoppingList.insert("xiaoqigui", atIndex: 0)
+        let mapleSyrup = shoppingList.removeAtIndex(0)
+        let apples = shoppingList.removeLast()
+
+        for item in shoppingList {
+            println(item)
+        }
+        for (index, value) in enumerate(shoppingList) {
+            println("Item \(value), index \(index)")
+        }
     }
 
 
