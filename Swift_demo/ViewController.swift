@@ -212,6 +212,64 @@ class ViewController: UIViewController {
         println("game is empty: \(games.isEmpty)")
         games["time"] = "2014:11:29"
 
+        let airports = ["TYO": "Tokyo", "LHR": "London Heathrow"]
+        for (airportCode, airportName) in airports {
+            println("\(airportCode) : \(airportName)")
+        }
+
+        var namesOfInteger = [Int: String]()
+        namesOfInteger[16] = "sixteen"
+        namesOfInteger = [:]
+
+        struct Sword {
+            var width: Float
+            let name: String
+            func description(){
+                println("my name is \(name) and width is \(width)")
+            }
+        }
+        var sword:Sword = Sword(width: 1.5, name: "xiaoqigui")
+        sword.description()
+
+        enum SomeEnumeration {
+            // meiju
+        }
+
+        enum Platform {
+//            case Windows
+//            case Linux
+//            case MacOs
+            case Windows, Linux, MacOs
+        }
+
+        var myPlatform = Platform.Windows
+        myPlatform = .Linux  // 很神奇对不对
+
+        switch myPlatform {
+            case .Windows:
+                println("Windows")
+            case .Linux:
+                println("Linux")
+            case .MacOs:
+                println("MacOs")
+            default:
+                println("Nothing")
+        }
+
+        enum Password {
+            case DigitPassword(Int)
+            case StringPassword(String)
+        }
+
+        var password = Password.DigitPassword(4078385)
+        password = Password.StringPassword("admin")
+
+        switch password {
+            case .DigitPassword(let digitPwd):
+                println("\(digitPwd)")
+            case .StringPassword(let strPwd):
+                println("\(strPwd)")
+        }
     }
 
 
