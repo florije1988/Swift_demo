@@ -270,6 +270,33 @@ class ViewController: UIViewController {
             case .StringPassword(let strPwd):
                 println("\(strPwd)")
         }
+
+        enum ASCIIControlCharacter: Character {
+            case Tab = "\t"
+            case LineFeed = "\n"
+            case CarriageReturn = "\r"
+        }
+
+        enum Planet: Int {
+            case Mercury = 1, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune
+        }
+
+        let earthsOrder = Planet.Earth.rawValue
+        println(earthsOrder)
+
+        let possiblePlanet = Planet(rawValue: 7)
+
+        let positionToFind = 3
+        if let somePlanet = Planet(rawValue: positionToFind) {
+            switch somePlanet {
+                case .Earth:
+                    println("earth")
+                default:
+                    println("other planet")
+            }
+        } else {
+            println("nothing on this position")
+        }
     }
 
 
