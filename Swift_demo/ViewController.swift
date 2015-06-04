@@ -204,7 +204,7 @@ class ViewController: UIViewController {
         var anotherThreeDoubles = Array(count: 3, repeatedValue: 2.5)
         var sixDoubles = threeDoubles + anotherThreeDoubles
 
-        var games: [String: String] = ["name": "fuboqing", "course": "shuxue"]
+        var games: [String:String] = ["name": "fuboqing", "course": "shuxue"]
         var game2 = ["name": "fuboqing", "course": "shuxue"]
         println(games)
 
@@ -224,11 +224,12 @@ class ViewController: UIViewController {
         struct Sword {
             var width: Float
             let name: String
-            func description(){
+            func description() {
                 println("my name is \(name) and width is \(width)")
             }
         }
-        var sword:Sword = Sword(width: 1.5, name: "xiaoqigui")
+
+        var sword: Sword = Sword(width: 1.5, name: "xiaoqigui")
         sword.description()
 
         enum SomeEnumeration {
@@ -246,14 +247,14 @@ class ViewController: UIViewController {
         myPlatform = .Linux  // 很神奇对不对
 
         switch myPlatform {
-            case .Windows:
-                println("Windows")
-            case .Linux:
-                println("Linux")
-            case .MacOs:
-                println("MacOs")
-            default:
-                println("Nothing")
+        case .Windows:
+            println("Windows")
+        case .Linux:
+            println("Linux")
+        case .MacOs:
+            println("MacOs")
+        default:
+            println("Nothing")
         }
 
         enum Password {
@@ -265,10 +266,10 @@ class ViewController: UIViewController {
         password = Password.StringPassword("admin")
 
         switch password {
-            case .DigitPassword(let digitPwd):
-                println("\(digitPwd)")
-            case .StringPassword(let strPwd):
-                println("\(strPwd)")
+        case .DigitPassword(let digitPwd):
+            println("\(digitPwd)")
+        case .StringPassword(let strPwd):
+            println("\(strPwd)")
         }
 
         enum ASCIIControlCharacter: Character {
@@ -289,14 +290,35 @@ class ViewController: UIViewController {
         let positionToFind = 3
         if let somePlanet = Planet(rawValue: positionToFind) {
             switch somePlanet {
-                case .Earth:
-                    println("earth")
-                default:
-                    println("other planet")
+            case .Earth:
+                println("earth")
+            default:
+                println("other planet")
             }
         } else {
             println("nothing on this position")
         }
+
+        println("3 + 2 = \(3 + 2)")
+
+        var hello = "you hao "
+        var oldcoder = "lao ma"
+        var char:Character = "!"
+        hello = hello + oldcoder
+        hello.append(char)
+        println("\(hello)")
+//        var tmp = char + char
+//        println("\(tmp)")  // 这是错误的
+
+        var zero = 2
+//        println("(3 &/zero 当 zero=2) = \(3 &/ zero)")
+
+        var baseValue:UInt8 = UInt8.max
+        println("baseValue top overflow value is: \(baseValue &+ 1)")
+        baseValue = UInt8.min
+        println("baseValue bottom overflow value is: \(baseValue &- 1)")
+
+
     }
 
 
