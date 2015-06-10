@@ -340,6 +340,19 @@ class ViewController: UIViewController {
 
         // just comment
 
+        var singers = ["1": "fuboqing", "2": "xiaoqigui"]
+        for singer in singers {
+            println("singer: \(singer.0) to sing: \(singer.1)")
+        }
+
+        var songs = [String](singers.values)
+        for songNum in 0 ..< songs.count {
+            println("song: \(songs[songNum])")
+        }
+
+        for var index = 0; index < songs.count; ++index {
+            println("song: \(songs[index])")
+        }
     }
 
 
