@@ -16,6 +16,7 @@
 		7AD5BBA64B66109AE912F7CE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AD5B8C8BBBFB36E02407454 /* LaunchScreen.xib */; };
 		7AD5BBAD60956AD3EFBE74C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AD5BB7368D7D1546E87B16D /* Main.storyboard */; };
 		7AD5BCBD7B1B9655E0BA1C88 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD5BB67998279946DC2B152 /* Log.swift */; };
+		7AD5BD83EEDD0A33543B0F50 /* ClassDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD5BC52AF04438300011E5D /* ClassDemo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		7AD5B936301CEA568EAD6037 /* Swift_demoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_demoTests.swift; sourceTree = "<group>"; };
 		7AD5BB67998279946DC2B152 /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		7AD5BB901D82644A474ED8B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7AD5BC52AF04438300011E5D /* ClassDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassDemo.swift; sourceTree = "<group>"; };
 		7AD5BCC32B405A6BBC7EF319 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		7AD5BD39358902E1B74E434D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		7AD5BDEA83BC9BF5D975CD39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				7AD5B1E166C5903D68C47A2C /* ViewController.swift */,
 				7AD5BB67998279946DC2B152 /* Log.swift */,
 				7AD5B6881A9784BA6E03AC76 /* Swords.swift */,
+				7AD5BC52AF04438300011E5D /* ClassDemo.swift */,
 			);
 			path = Swift_demo;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 				7AD5B48DDACBE430108EE2D9 /* ViewController.swift in Sources */,
 				7AD5BCBD7B1B9655E0BA1C88 /* Log.swift in Sources */,
 				7AD5B0FCFB3514A8741936AB /* Swords.swift in Sources */,
+				7AD5BD83EEDD0A33543B0F50 /* ClassDemo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

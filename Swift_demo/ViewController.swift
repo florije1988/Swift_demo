@@ -353,6 +353,18 @@ class ViewController: UIViewController {
         for var index = 0; index < songs.count; ++index {
             println("song: \(songs[index])")
         }
+
+        var oldCoder = Peoples()
+        if oldCoder.isEnough() {
+            println("success!")
+        } else {
+            println("no success!")
+        }
+
+        var youngCoder = SimplePeople()
+        youngCoder.pray()
+
+
     }
 
 
@@ -362,4 +374,28 @@ class ViewController: UIViewController {
     }
 
 
+}
+
+
+class Peoples {
+    var failCount: Int = 0
+    func increment() {
+        failCount++
+    }
+
+    func incrementBy(amount: Int) {
+        failCount += amount
+    }
+
+    func reset() {
+        failCount = 0
+    }
+
+    func isEnough() -> Bool {
+        if failCount > 1000 {
+            return true
+        } else {
+            return false
+        }
+    }
 }
